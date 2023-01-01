@@ -1,8 +1,6 @@
 function superbowlWin(records) {
-    let win =  records.find((element) => {
-        return element.result === "W";
-    });
+    let win =  records.find(elem => elem.result === "W");
     if(win !== undefined)
         return win.year;
-    return undefined
+    return win
 }
